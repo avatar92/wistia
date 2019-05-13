@@ -166,8 +166,10 @@ a:visited
 .container-3 
 {
     display: flex; 
+    /*flex-wrap: wrap;*/
     color: #2A2D35;
-    justify-content: space-around
+    justify-content: space-between;
+    
     
 }
 .container-3  .box-01
@@ -176,6 +178,9 @@ a:visited
     font-family: sans-serif; 
     font-weight: 400;
     padding: 30px; 
+    /*width: 400px;
+    resize: both;
+    overflow: auto;*/
 }
 .container-3  .box-02
 {   display: flex; 
@@ -183,6 +188,9 @@ a:visited
     font-family: sans-serif; 
     font-weight: 400;
     padding: 30px;
+    /*width: 400px;
+    resize: both;
+    overflow: auto;*/
 }
 .container-3  .box-03
 {   display: flex; 
@@ -190,6 +198,9 @@ a:visited
     font-family: sans-serif; 
     font-weight: 400;
     padding: 30px;
+    /*width: 400px;
+    resize: both;
+    overflow: auto;*/
 }
 .container-3 a 
 {    
@@ -218,12 +229,29 @@ footer .boxcontainer
     align-items: center;
     background-color: #2a2d35; 
 } 
-footer hr{ 
+footer .verticalbar{ 
   
     border:         none;
     border-left:    1px solid hsla(200, 10%, 50%,100);
     height:         50vh;
     width:          1px;       
+}
+footer .hrizentalbarparent
+{   
+    display: flex;
+    background-color: #2a2d35;
+    margin: -1px;
+    justify-content: center;
+}
+footer .horizentalbar
+{
+    margin: 0px;
+    border: none; 
+    border-top: 1px solid hsla(200, 10%, 50%,100);
+    height: 1px;
+    
+     
+     
 }
 footer .boxcontainer .list0 
 {
